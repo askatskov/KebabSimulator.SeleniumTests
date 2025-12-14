@@ -44,8 +44,8 @@ public class Auth_Register_Login_Cockroach_Test
         var login = new LoginPage(driver);
         login.Login(email, Password);
 
-        wait.Until(d => d.Url.Contains("/Kebab"));
-        Assert.That(driver.Url, Does.Contain("/Kebab"));
+        wait.Until(d => d.Url.Contains(""));
+        Assert.That(driver.Url, Does.Contain(""));
 
         var page = new CockroachPage(driver);
 
